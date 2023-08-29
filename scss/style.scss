@@ -1,0 +1,1199 @@
+// @import "./destyle" ;
+// @import "./normalize" ;
+@import "./reset";
+@import "./visHidden";
+@import "./vars";
+
+html {
+  font-size: $fontSize;
+}
+
+body {
+  font-family: $fontMain;
+  font-style: normal;
+  font-weight: $fontWeightNormal;
+  font-size: 1.8rem;
+  color: $colorBlack;
+
+  background-color: $colorBgnd;
+}
+
+/* Контейнер, ограничивающий фиксированный макет */
+.wrapper {
+  // max-width: 1920px;
+  margin: 0 10.4vw;
+}
+
+.container {
+  // wrapper + grid template with columns
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+
+a,
+form,
+button {
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.section__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// ===   HEADER   ===
+
+.header {
+  padding-top: 2rem;
+  margin-bottom: 4.4rem;
+}
+
+// ======   headerTop start  ======
+
+.headerTop {
+  padding-bottom: 1.6rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  color: $colorDark;
+
+  border-bottom: solid 0.1rem $colorGrayLight;
+}
+
+.headerTop__actionsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: flex-start;
+}
+
+.headerTop__action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  font-weight: 700;
+
+  & svg {
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-end;
+  }
+}
+
+.city__list option {
+  color: $colorGrayDark;
+  font-weight: 400;
+}
+
+.cityList {
+  background-image: url(../icons/chevron.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.headerTop__aboutUs {
+  display: flex;
+  gap: 5.6rem;
+  justify-content: flex-end;
+}
+
+// ======   headerTop stop  ======
+
+// ======   headerMain start  ======
+
+.headerMain {
+  padding-top: 1.2rem;
+  margin-bottom: 1.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.headerMain__logo {
+  width: 18.8rem;
+  height: auto;
+  margin-right: 10rem;
+
+  fill: $colorBlack;
+}
+
+.headerMain__address {
+  margin-right: 6.8rem;
+
+  color: $colorDark;
+
+  & a {
+    color: $colorRed;
+    text-decoration-line: underline;
+  }
+}
+
+.headerMain__search {
+  max-height: 4.4rem;
+  margin-right: 7.2rem;
+  padding: 1.2rem 1.2rem 1.6rem 2.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  align-content: center;
+
+  border-radius: 25px;
+  border: 1px solid $colorBlueLight;
+}
+
+.headerMain__input::placeholder {
+  font-size: 1.6rem;
+  color: $colorGrayDark;
+}
+
+.headerMain__btn svg {
+  width: 2.4rem;
+  height: auto;
+}
+
+.headerMain__call {
+  margin-right: 10.4rem;
+
+  display: grid;
+  row-gap: 1rem;
+}
+
+.headerMain__call a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: $colorDark;
+  transition: opacity 0.3s;
+
+  & svg {
+    width: 2rem;
+    height: auto;
+    fill: $colorDark;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn {
+  padding: 0.8rem 2.4rem;
+  margin-left: 3rem;
+  justify-self: flex-start;
+  text-align: center;
+
+  color: $colorRed;
+
+  border-radius: 5px;
+  border: 1px solid $colorRed;
+}
+
+.userNav_list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2.8rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.userNav__link svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: $colorDark;
+}
+
+.userNav__like {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.5rem;
+  justify-content: start;
+}
+
+.like_value {
+  padding: 0.2rem 1.4rem;
+  color: $colorBgnd;
+  border-radius: 7px;
+  background: $colorRed;
+}
+
+// ======   headerMain stop   ======
+// ======   headerCatalog start  ======
+
+.header__catalog {
+  background: $colorBlueLight;
+}
+
+.headerCatalog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  align-items: center;
+}
+
+.headerCatalog__item {
+  position: relative;
+
+  & > a {
+    padding: 2rem 0;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: $colorGray;
+    text-transform: uppercase;
+  }
+}
+
+.catalogLook {
+  padding: 2rem 1.2rem;
+
+  font-size: 2rem;
+  font-weight: 700;
+  color: $colorGray;
+  text-transform: uppercase;
+
+  background: $colorBlue;
+  border-radius: 5px;
+}
+
+.submenu {
+  position: absolute;
+  top: 4.5rem;
+
+  min-width: 130%;
+  padding: 0.5rem 0 1.6rem;
+
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  color: $colorDark;
+
+  border-radius: 5px;
+  background: $colorBgnd;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.headerCatalog__item:hover .submenu {
+  display: flex;
+}
+
+.submenu__item {
+  padding: 0.8rem 0 1.6rem 3.2rem;
+  a:hover {
+    color: $colorBlue;
+  }
+}
+
+.submenu__item:hover {
+  background: $colorGrayLight;
+}
+
+// ======   headerCatalog stop  ======
+// ===   HEADER   ===
+
+// ===   MAIN   ===
+// ======   filled start  ======
+
+.filled {
+  height: 387px;
+
+  margin-bottom: 5.6rem;
+
+  background: $colorGray;
+  border-radius: 10px;
+}
+
+// ======   filled stop  ======
+// ======   advantage start   ======
+
+.advantage__title {
+  margin-bottom: 3.4rem;
+}
+
+.adventage__list {
+  margin-bottom: 6.2rem;
+}
+
+.advantage__item {
+  padding: 2.4rem 2rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  background: $colorGrayExtraLight;
+
+  & svg {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.advantage__subtitle {
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.advantage__text {
+  font-size: 1.6rem;
+}
+// ======   advantage stop   ======
+// ======  catalogue start   ======
+
+.catalogue__title {
+  margin-bottom: 4rem;
+}
+
+.catalogue__list {
+  margin-bottom: 7.2rem;
+
+  column-gap: 3rem;
+  row-gap: 4rem;
+}
+
+.itemCatalogue,
+.itemSample {
+  border-radius: 1rem;
+
+  & a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.itemCatalogue__title,
+.itemSample__title {
+  grid-area: 1 / 1 / -1 /-1;
+  order: 10;
+  justify-self: start;
+  align-self: self-end;
+
+  padding: 0.5rem 1.2rem;
+  color: $colorBgnd;
+  font-size: 2.2rem;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+
+  border-radius: 0 0 0 1rem;
+  background: $colorBlue;
+}
+
+.itemCatalogue__img,
+.itemSample__img {
+  grid-area: 1 / 1 / -1 /-1;
+}
+
+// ======  catalogue stop   ======
+// ======  popular start   ======
+
+.popular__header,
+.samples__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 4rem;
+}
+
+.popular__all {
+  color: $colorDark;
+}
+
+.popular__list {
+  margin-bottom: 3.6rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.product {
+  position: relative;
+  padding: 3.6rem;
+
+  display: grid;
+  grid-template-columns: auto;
+
+  border-radius: 5px;
+  background: $colorBgnd;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.05);
+
+  & .product__slider {
+    visibility: hidden;
+  }
+  & .product__color {
+    visibility: hidden;
+  }
+  & .product__size {
+    visibility: hidden;
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.1);
+
+    & .product__pict {
+      visibility: hidden;
+    }
+    & .product__slider {
+      visibility: visible;
+    }
+    & .product__color {
+      visibility: visible;
+    }
+    & .product__size {
+      visibility: visible;
+    }
+
+    & .btn__buy {
+      color: $colorBgnd;
+      background: $colorBlue;
+    }
+  }
+}
+
+.product__title {
+  grid-area: 2 / 1 / 3 / -1;
+
+  margin-top: 2rem;
+  margin-bottom: 2.8rem;
+}
+
+.product__label {
+  grid-area: 1/ 1 / 2 / -2;
+  z-index: 50;
+
+  position: absolute;
+  top: -15px;
+  left: -10px;
+
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+
+  color: $colorBgnd;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.product__discount {
+  padding: 4px 15px;
+
+  border-radius: 5px;
+  background: $colorRed;
+}
+
+.product__hit {
+  font-size: 1.6rem;
+
+  padding: 4px 20px;
+
+  border-radius: 5px;
+  background: $colorGreenLight;
+}
+
+.product__slider {
+  grid-area: 1/ 1 / 2 / -2;
+}
+
+.product__img {
+  position: relative;
+
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.product__pict {
+  grid-area: 1/ 1 / 2 / -2;
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product__color {
+  grid-area: 3 / 1 / 4 / -1;
+
+  margin-bottom: 1.6rem;
+
+  display: flex;
+  gap: 1.2rem;
+
+  & a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  & li {
+    width: 2.8rem;
+    height: 2.8rem;
+
+    &:nth-child(1) {
+      background: $colorDark;
+    }
+    &:nth-child(2) {
+      background: $colorGreen;
+    }
+    &:nth-child(3) {
+      background: $colorIvory;
+    }
+  }
+}
+
+.product__price {
+  grid-area: 4 / 1 / 5 / -1;
+
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.6rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: start;
+
+  font-weight: 700;
+
+  border-top: solid 1px $colorGrayLight;
+  border-bottom: solid 1px $colorGrayLight;
+}
+
+.product__price_old {
+  color: $colorGray;
+  text-decoration: line-through;
+}
+
+.product__price_new {
+  color: $colorBlack;
+  font-size: 2.5rem;
+}
+
+.product__info {
+  grid-area: 5 / 1 / 6 / -1;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
+  & svg {
+    width: 34px;
+    height: auto;
+    fill: $colorRed;
+  }
+}
+
+.btn__buy {
+  max-width: 22rem;
+  padding: 1.4rem 7rem;
+  margin-right: 3.2rem;
+  text-align: center;
+
+  color: $colorDark;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+
+  border-radius: 5px;
+  border: 1px solid $colorBlue;
+}
+
+.product__size {
+  color: $colorDark;
+
+  & td:not(:first-of-type) {
+    font-size: 1.6rem;
+  }
+}
+
+// =====================
+
+.popular__showMore {
+  padding: 3rem 0;
+
+  color: $colorDark;
+  text-align: center;
+
+  border-radius: 5px;
+  background: $colorGrayExtraLight;
+}
+// ======  popular stop   ======
+// ======  categoryCloud start   ======
+.categoryCloud {
+  padding-top: 8rem;
+  margin-bottom: 7.6rem;
+}
+
+.categoryCloud__title {
+  margin-bottom: 4rem;
+}
+
+.categoryCloud__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  column-gap: 3.2rem;
+  row-gap: 1.5rem;
+}
+
+.categoryCloud__item {
+  padding: 1.2rem 2rem;
+
+  color: $colorBlue;
+  text-transform: uppercase;
+  text-align: center;
+
+  border-radius: 5px;
+  border: 1px solid $colorBlue;
+}
+
+// ======  categoryCloud stop   ======
+// ======  promotion start   ======
+.promotion {
+  // margin: 50px;
+  margin-bottom: 9.6rem;
+}
+
+.promotion__title {
+  margin-bottom: 4rem;
+}
+
+// =======================================================
+.product__img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.product__pict {
+  width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+
+  grid-area: 1/ 1 / 2 / -2;
+}
+.product__color {
+  margin-bottom: 1.6rem;
+
+  grid-area: 3 / 1 / 4 / -1;
+
+  display: flex;
+  gap: 1.2rem;
+
+  & a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  & li {
+    width: 2.8rem;
+    height: 2.8rem;
+
+    &:nth-child(1) {
+      background: $colorDark;
+    }
+    &:nth-child(2) {
+      background: $colorGreen;
+    }
+    &:nth-child(3) {
+      background: $colorIvory;
+    }
+  }
+}
+
+.product__price {
+  grid-area: 4 / 1 / 5 / -1;
+
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.6rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: start;
+
+  font-weight: 700;
+
+  border-top: solid 1px $colorGrayLight;
+  border-bottom: solid 1px $colorGrayLight;
+}
+
+.product__price_old {
+  color: $colorGray;
+  text-decoration: line-through;
+}
+
+.product__price_new {
+  color: $colorBlack;
+  font-size: 2.5rem;
+}
+
+.product__info {
+  grid-area: 5 / 1 / 6 / -1;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
+  & svg {
+    width: 34px;
+    height: auto;
+    fill: $colorRed;
+  }
+}
+
+.btn__buy {
+  max-width: 22rem;
+  padding: 1.4rem 7rem;
+  margin-right: 3.2rem;
+  text-align: center;
+
+  color: $colorDark;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+
+  border-radius: 5px;
+  border: 1px solid $colorBlue;
+}
+
+.product__size {
+  color: $colorDark;
+
+  & td:not(:first-of-type) {
+    font-size: 1.6rem;
+  }
+}
+
+// =======================================================
+
+.promoCard {
+  position: relative;
+  padding: 2.4rem 3.6rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  justify-items: flex-start;
+
+  border-radius: 5px;
+  background: $colorBgnd;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+.promoCard__title {
+  grid-area: 2 / 1 / 3 /-1;
+
+  margin-bottom: 1.6rem;
+}
+
+.promoCard__label {
+  grid-area: 1 / 1 / 2 /-1;
+  align-self: flex-start;
+  color: $colorBgnd;
+}
+
+.promoCard__discount {
+  padding: 4px 15px;
+  border-radius: 5px;
+  background: $colorRed;
+}
+.promoCard__pict {
+  grid-area: 1 / 1 / 2 /-1;
+  order: -1;
+  margin-bottom: 2rem;
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.promoCard__price {
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.6rem;
+
+  grid-area: 3 / 1 / 4 /-1;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: start;
+
+  font-weight: 700;
+
+  border-top: solid 1px $colorGrayLight;
+  border-bottom: solid 1px $colorGrayLight;
+
+  &_old {
+    color: $colorGray;
+    text-decoration: line-through;
+  }
+
+  &_new {
+    color: $colorBlack;
+    font-size: 2.5rem;
+  }
+}
+
+.promoCard__info {
+  grid-area: 4 / 1 / 5 /-1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+
+  & svg {
+    width: 34px;
+    height: auto;
+    justify-self: flex-end;
+    fill: $colorRed;
+  }
+}
+
+.btn__buy {
+  max-width: 22rem;
+  padding: 1.4rem 7rem;
+  margin-right: 3.2rem;
+  text-align: center;
+
+  color: $colorDark;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+
+  border-radius: 5px;
+  border: 1px solid $colorBlue;
+}
+
+// ======  promotion stop   ======
+// ======  samples start   ======
+
+.samples {
+  margin-bottom: 6.5rem;
+}
+
+.samples__header {
+  margin-bottom: 3.6rem;
+}
+.samples__title {
+}
+
+.samples__all {
+}
+
+.samples__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(488px, 1fr));
+  gap: 3rem;
+  grid-auto-flow: dense;
+}
+
+.itemSample {
+  &_tall {
+    grid-row: span 2;
+  }
+
+  &_wide {
+    grid-column: span 2;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.itemSample__title {
+}
+
+.itemSample__img {
+  border-radius: 1rem;
+}
+
+// ======  samples stop   ======
+// ======  contacts start   ======
+
+.contacts {
+  margin-bottom: 10.4rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contactList {
+  padding-left: 5.2rem;
+  color: $colorDark;
+  font-size: 25px;
+  font-weight: 700;
+  // border-radius: 10px 0px 0px 10px;
+
+  background: linear-gradient(
+      rgba(243, 231, 198, 0.6),
+      rgba(243, 231, 198, 0.6)
+    ),
+    url(../img/contact_bgd.png) no-repeat;
+  background-size: cover;
+
+  & h2 {
+    padding-top: 5.2rem;
+    margin-bottom: 8rem;
+  }
+
+  & address {
+    margin-bottom: 8rem;
+  }
+
+  & a {
+    display: block;
+    margin-bottom: 5.6rem;
+  }
+
+  button {
+    padding: 1.2rem 3.6rem;
+    margin-bottom: 12.4rem;
+
+    text-transform: uppercase;
+    color: $colorBgnd;
+    background: $colorBlue;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.contactMap {
+  overflow: hidden;
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+
+  }
+}
+
+// ======  contacts stop   ======
+// ======  ourSocial start   ======
+
+.ourSocial__title {
+  margin-bottom: 4rem;
+}
+
+.imgWrapper {
+  margin-bottom: 7.2rem;
+  display: grid;
+
+  & picture {
+    justify-self: center;
+  }
+}
+
+// ======  ourSocial stop   ======
+
+// ======   common OVER style   ======
+
+// ======   FOOTER start   ======
+
+footer {
+  color: $colorBgnd;
+
+  background-color: $colorBlue;
+}
+
+.footerWrapper {
+  padding-top: 4rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.8rem;
+}
+
+.footerNav {
+  display: grid;
+
+  & svg {
+    width: 180px;
+    height: auto;
+    fill: $colorBgnd;
+
+    margin-bottom: 2.4rem;
+  }
+}
+
+.phone {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+dl {
+  margin-bottom: 6.4rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2.6rem;
+  row-gap: 1rem;
+  & dd {
+    font-weight: 700;
+  }
+}
+
+.footerSocial {
+  margin-bottom: 10rem;
+
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  & p {
+    margin-bottom: 1.2rem;
+  }
+
+  & img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.copyright {
+  margin-bottom: 4.4rem;
+  color: $colorGrayLight;
+  font-size: 2rem;
+}
+
+.footerMenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+
+  & dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    align-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+
+    & dt {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    & dd {
+      font-weight: 400;
+    }
+  }
+}
+
+// ================  SLICK общие настройки
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+// ================  SLICK частные настройки
+
+//first slider, into cards
+.product__slider {
+  position: relative;
+  min-width: 0;
+
+  & .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    & li {
+    }
+
+    & button {
+      font-size: 0;
+      width: 8rem;
+      height: 0.4rem;
+      border-radius: 2px;
+      border: 1px solid $colorBlue;
+      background: transparent;
+    }
+  }
+}
+
+.product__slider .slick-dots li.slick-active button {
+  background: $colorBlue;
+}
+
+// second slider
+.promotion__slider {
+  min-width: 0;
+
+  position: relative;
+
+  padding: 0 10px;
+
+  & .slick-track {
+    gap: 3rem;
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+
+    &.slick-prev {
+      left: -15px;
+      background: url("../icons/sliderArrow.svg") 0 0 / 100% no-repeat;
+    }
+
+    &.slick-next {
+      right: -15px;
+      background: url("../icons/sliderArrow.svg") 0 0 / 100% no-repeat;
+      transform: rotate(180deg);
+    }
+  }
+}

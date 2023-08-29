@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext"
+    rel="stylesheet">
+  <!-- slick slider start -->
+  <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script defer src="./js/slick.min.js"></script>
+  <script defer src="./js/index.js"></script>
+  <!-- slick slider end -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>АркоМебель - магазин мебели </title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="header__top headerTop wrapper">
+      <ul class="headerTop__actionsList">
+        <li class="headerTop__action">
+          <svg viewBox="0 0 17 21">
+            <title>Расположение</title>
+            <use href="./icons/sprite.svg#point"></use>
+          </svg>
+          <form class="city__list" action="#" method="get">
+            <select class="cityList" name="cityList" id="cityList">
+              <option value="rostov">Ростов</option>
+              <option value="norostov">неРостов</option>
+              <option value="nearrostov">почтиРостов</option>
+            </select>
+          </form>
+        </li>
+        <li class="headerTop__action">
+          <a href="#">Акции</a>
+        </li>
+        <li class="headerTop__action">
+          <a href="#">Сборка</a>
+        </li>
+        <li class="headerTop__action">
+          <a href="#">Оплата</a>
+        </li>
+        <li class="headerTop__action">
+          <a href="#">Доставка </a>
+        </li>
+      </ul>
+      <ul class="headerTop__aboutUs">
+        <li class="headerTop__ourWorks">
+          <a href="">Наши работы</a>
+        </li>
+        <li class="headerTop__ourContacts">
+          <a href="">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__main headerMain wrapper">
+      <a href="index.html">
+        <svg class="headerMain__logo" viewBox="0 0 189 39">
+          <title>Логотип АркоМебель</title>
+          <use href="./icons/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <address class="headerMain__address">
+        <p>ул. Московская, 144 корп.&nbsp;1</p>
+        <a href="#">Схема проезда</a>
+      </address>
+      <form class="headerMain__search" action="#" method="get">
+        <label class="visuallyHidden" for="search">Поисковый запрос</label>
+        <input class="headerMain__input" type="text" name="search" id="search" placeholder="Поиск">
+        <button class="headerMain__btn" type="submit">
+          <svg viewBox="0 0 21 21">
+            <title>Поиск</title>
+            <use href="./icons/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="headerMain__call">
+        <a href="tel:+79615259191">
+          <svg viewBox="0 0 20 19">
+            <title>Позвонить</title>
+            <use href="./icons/sprite.svg#phone"></use>
+          </svg>
+          8 (961) 525 91 91
+        </a>
+        <button class="btn">Заказать звонок</button>
+      </div>
+
+      <ul class="headerMain__userNav userNav_list">
+        <li class="userNav__item">
+          <a class="userNav__link" href="#">
+            <svg viewBox="0 0 17 19">
+              <title>Войти</title>
+              <use href="./icons/sprite.svg#login"></use>
+            </svg>
+            <p>Войти</p>
+          </a>
+        </li>
+        <li class="userNav__item">
+          <a class="userNav__link" href="#">
+            <div class="userNav__like">
+              <svg viewBox="0 0 22 19">
+                <title>Избранное</title>
+                <use href="./icons/sprite.svg#favoirite"></use>
+              </svg>
+              <p class="like_value">2</p>
+            </div>
+            <p>Избранное</p>
+          </a>
+        </li>
+        <li class="userNav__item">
+          <a class="userNav__link" href="#">
+            <svg viewBox="0 0 24 24">
+              <title>Корзина</title>
+              <use href="./icons/sprite.svg#cart"></use>
+            </svg>
+            <p>Корзина</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__catalog headerCatalog">
+      <ul class="headerCatalog__list wrapper">
+        <li class="headerCatalog__item">
+          <a href="#">
+            кухни
+          </a>
+          <!-- выпадающий список -->
+          <ul class="headerCatalog__submenu submenu">
+            <li class="submenu__item">
+              <a href="#">Модульные кухни</a>
+            </li>
+            <li class="submenu__item submenu__item_active">
+              <a href="#">Готовые комплекты</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Маленькие кухни</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Угловые кухни</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Кухонные уголки</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Столы кухонные</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Стулья для кухни</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Комплектующие</a>
+            </li>
+          </ul>
+
+        </li>
+        <li class="headerCatalog__item">
+          <a href="#">
+            гостиные
+            <!-- выпадающий список -->
+          </a>
+        </li>
+        <li class="headerCatalog__item">
+          <a href="#">
+            спальни
+            <!-- выпадающий список -->
+          </a>
+        </li>
+        <li class="headerCatalog__item">
+          <a href="#">
+            прихожие
+            <!-- выпадающий список -->
+          </a>
+        </li>
+        <li class="headerCatalog__item">
+          <a href="#">
+            шкафы-купе
+            <!-- выпадающий список -->
+          </a>
+        </li>
+        <li class="headerCatalog__item">
+          <a href="#">
+            детские
+            <!-- выпадающий список -->
+          </a>
+        </li>
+        <li class="headerCatalog__item">
+          <a href="#">
+            диваны
+            <!-- выпадающий список -->
+          </a>
+        </li>
+        <li class="headerCatalog__item">
+          <!--           <a href="#">
+            где посмотреть
+          </a> -->
+          <button class="catalogLook">где посмотреть</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="filled wrapper"></div>
+
+    <section class="advantage wrapper">
+      <h2 class="advantage__title section__title">наши преимущества</h2>
+      <ul class="adventage__list container">
+        <li class="advantage__item">
+          <svg viewBox="0 0 17 21">
+            <title>Магазины рядом</title>
+            <use href="./icons/sprite.svg#point"></use>
+          </svg>
+          <h3 class="advantage__subtitle">Удобное расположение магазина</h3>
+        </li>
+        <li class="advantage__item">
+          <svg viewBox="0 0 55 44">
+            <title>Быстрая доставка</title>
+            <use href="./icons/sprite.svg#delivery"></use>
+          </svg>
+          <h3 class="advantage__subtitle">Быстрая доставка</h3>
+        </li>
+        <li class="advantage__item">
+          <svg viewBox="0 0 42 42">
+            <title>Низкие цены</title>
+            <use href="./icons/sprite.svg#price"></use>
+          </svg>
+          <div>
+            <h3 class="advantage__subtitle">Низкие цены</h3>
+            <p class="advantage__text">Если найдете дешевле - сделаем скидку</p>
+          </div>
+        </li>
+        <li class="advantage__item">
+          <svg viewBox="0 0 50 48">
+            <title>Гарантии</title>
+            <use href="./icons/sprite.svg#garanty"></use>
+          </svg>
+          <h3 class="advantage__subtitle">Гарантия качества</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="catalogue wrapper">
+      <h2 class="catalogue__title section__title">каталог</h2>
+      <ul class="catalogue__list container">
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">кухни</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c01.webp" type="image/webp">
+              <img src="./img/c01.jpg" alt="кухни" width="357" height="238">
+            </picture>
+          </a>
+        </li>
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">гостиные</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c02.webp" type="image/webp">
+              <img src="./img/c02.jpg" alt="гостиные" width="358" height="238">
+            </picture>
+          </a>
+        </li>
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">спальни</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c03.webp" type="image/webp">
+              <img src="./img/c03.jpg" alt="спальни" width="357" height="238">
+            </picture>
+          </a>
+        </li>
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">прихожие</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c04.webp" type="image/webp">
+              <img src="./img/c04.jpg" alt="прихожие" width="357" height="238">
+            </picture>
+          </a>
+        </li>
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">шкафы-купе</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c05.webp" type="image/webp">
+              <img class="itemCatalogue__img" src="./img/c05.jpg" alt="шкафы-купе" width="357" height="238">
+            </picture>
+          </a>
+        </li>
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">детские</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c06.webp" type="image/webp">
+              <img src="./img/c06.jpg" alt="детские" width="358" height="238">
+            </picture>
+          </a>
+        </li>
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">диваны</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c07.webp" type="image/webp">
+              <img src="./img/c07.jpg" alt="диваны" width="357" height="240">
+            </picture>
+          </a>
+        </li>
+        <li class="catalogue__item itemCatalogue">
+          <a href="#">
+            <h3 class="itemCatalogue__title">столы и стулья</h3>
+            <picture class="itemCatalogue__img">
+              <source srcset="./img/c08.webp" type="image/webp">
+              <img src="./img/c08.jpg" alt="столы и стулья" width="357" height="238">
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="popular wrapper">
+      <div class="popular__header">
+        <h2 class="popular__title section__title">популярные товары</h2>
+        <a class="popular__all" href="#">Все товары</a>
+      </div>
+
+      <ul class="popular__list">
+
+        <li class="popular__item product">
+          <h3 class="product__title">Мори кровать КРМ 900.1</h3>
+          <div class="product__label">
+            <p class="product__discount"> -30% </p>
+            <p class="product__hit visuallyHidden"> hit </p>
+          </div>
+          <div class="product__slider">
+
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Мори кровать КРМ 900.1" width="296" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p02.webp" type="image/webp">
+                  <img src="./img/p02.jpg" alt="Мори кровать КРМ 900.1" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Мори кровать КРМ 900.1" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p01.webp" type="image/webp">
+              <img src="./img/p01.jpg" alt="" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="popular__item product">
+          <h3 class="product__title">Гостиная модульная Lucido</h3>
+          <div class="product__label">
+            <p class="product__discount visuallyHidden"> -30% </p>
+            <p class="product__hit"> hit </p>
+          </div>
+          <div class="product__slider">
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p02.webp" type="image/webp">
+                  <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p02.webp" type="image/webp">
+              <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="popular__item product">
+          <h3 class="product__title">Ронда КРР1600.1</h3>
+          <div class="product__label">
+            <p class="product__discount"> -30% </p>
+            <p class="product__hit visuallyHidden"> hit </p>
+          </div>
+          <div class="product__slider">
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p02.webp" type="image/webp">
+                  <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p03.webp" type="image/webp">
+              <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="popular__item product">
+          <h3 class="product__title">Гранд шкаф верхний горизонтальный глубокий стекло 500</h3>
+          <div class="product__label">
+            <p class="product__discount"> -30% </p>
+            <p class="product__hit visuallyHidden"> hit </p>
+          </div>
+          <div class="product__slider">
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p02.webp" type="image/webp">
+                  <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p03.webp" type="image/webp">
+              <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="popular__item product">
+          <h3 class="product__title">Гостиная модульная Lucido</h3>
+          <div class="product__label">
+            <p class="product__discount visuallyHidden"> -30% </p>
+            <p class="product__hit"> hit </p>
+          </div>
+          <div class="product__slider">
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p02.webp" type="image/webp">
+                  <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p02.webp" type="image/webp">
+              <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="popular__item product">
+          <h3 class="product__title">Гостиная модульная Lucido</h3>
+          <div class="product__label">
+            <p class="product__discount visuallyHidden"> -30% </p>
+            <p class="product__hit"> hit </p>
+          </div>
+          <div class="product__slider">
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p02.webp" type="image/webp">
+                  <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p02.webp" type="image/webp">
+              <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="popular__item product">
+          <h3 class="product__title">Кухня Лондон модульная </h3>
+          <div class="product__label">
+            <p class="product__discount"> -30% </p>
+            <p class="product__hit"> hit </p>
+          </div>
+          <div class="product__slider">
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p03.webp" type="image/webp">
+              <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="popular__item product">
+          <h3 class="product__title">Кухня Лондон модульная </h3>
+          <div class="product__label">
+            <p class="product__discount"> -30% </p>
+            <p class="product__hit"> hit </p>
+          </div>
+          <div class="product__slider">
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p03.webp" type="image/webp">
+                  <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p02.webp" type="image/webp">
+                  <img src="./img/p02.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+            <div class="product__slide">
+              <div class="product__img">
+                <picture>
+                  <source srcset="./img/p01.webp" type="image/webp">
+                  <img src="./img/p01.jpg" alt="Гостиная модульная Lucido" width="284" height="214">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product__pict">
+            <picture>
+              <source srcset="./img/p03.webp" type="image/webp">
+              <img src="./img/p03.jpg" alt="Гостиная модульная Lucido" width="296" height="214">
+            </picture>
+          </div>
+          <ul class="product__color">
+            <li>
+              <a href="#" class="colorBlack"></a>
+            </li>
+            <li>
+              <a href="#" class="colorGreen"></a>
+            </li>
+            <li>
+              <a href="#" class="colorIvory"></a>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__price_old">7 159 руб.</p>
+            <p class="product__price_new">5 017 руб.</p>
+          </div>
+          <div class="product__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+          <table class="product__size">
+            <tr>
+              <td>Размеры:</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+              <td>Глубина</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1635 мм </td>
+              <td>650 мм</td>
+              <td>2032 мм</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+
+      <div class="popular__showMore">
+        <a href="#">Показать еще</a>
+      </div>
+
+    </section>
+
+    <section class="categoryCloud wrapper">
+      <h2 class="categoryCloud__title section__title"> популярные категории </h2>
+
+      <ul class="categoryCloud__list">
+        <li class="categoryCloud__item">
+          <a href="#">кухни</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#"> кровати </a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">гостиные</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">шкаф-купе</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">спальни</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">прихожие</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">диваны</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">детские</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">диваны</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">детские</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">стулья</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">столы</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">шкаф-купе</a>
+        </li>
+        <li class="categoryCloud__item">
+          <a href="#">шкаф-купе</a>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <section class="promotion wrapper">
+      <h2 class="promotion__title section__title"> товары по акции </h2>
+
+      <div class="promotion__slider">
+
+        <div class="promotion__slide promoCard">
+          <h3 class="promoCard__title">Ронда КРР1600.1 </h3>
+          <div class="promoCard__label">
+            <p class="promoCard__discount"> -30% </p>
+          </div>
+          <picture class="promoCard__pict">
+            <source srcset="./img/p01.webp" type="image/webp">
+            <img src="./img/p01.jpg" alt="" width="296" height="214">
+          </picture>
+          <div class="promoCard__price">
+            <p class="promoCard__price_old">7 159 руб.</p>
+            <p class="promoCard__price_new">5 017 руб.</p>
+          </div>
+          <div class="promoCard__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="promotion__slide promoCard">
+          <h3 class="promoCard__title">Гранд шкаф верхний горизонтальный глубокий стекло 500 Гранд шкаф верхний
+            горизонтальный глубокий стекло 500</h3>
+          <div class="promoCard__label">
+            <p class="promoCard__discount"> -30% </p>
+          </div>
+          <picture class="promoCard__pict">
+            <source srcset="./img/p01.webp" type="image/webp">
+            <img src="./img/p01.jpg" alt="" width="296" height="214">
+          </picture>
+          <div class="promoCard__price">
+            <p class="promoCard__price_old">7 159 руб.</p>
+            <p class="promoCard__price_new">5 017 руб.</p>
+          </div>
+          <div class="promoCard__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="promotion__slide promoCard">
+          <h3 class="promoCard__title">Ронда КРР1600.1 </h3>
+          <div class="promoCard__label">
+            <p class="promoCard__discount"> -30% </p>
+          </div>
+          <picture class="promoCard__pict">
+            <source srcset="./img/p01.webp" type="image/webp">
+            <img src="./img/p01.jpg" alt="" width="296" height="214">
+          </picture>
+          <div class="promoCard__price">
+            <p class="promoCard__price_old">7 159 руб.</p>
+            <p class="promoCard__price_new">5 017 руб.</p>
+          </div>
+          <div class="promoCard__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="promotion__slide promoCard">
+          <h3 class="promoCard__title">Ронда КРР1600.1 </h3>
+          <div class="promoCard__label">
+            <p class="promoCard__discount"> -30% </p>
+          </div>
+          <picture class="promoCard__pict">
+            <source srcset="./img/p01.webp" type="image/webp">
+            <img src="./img/p01.jpg" alt="" width="296" height="214">
+          </picture>
+          <div class="promoCard__price">
+            <p class="promoCard__price_old">7 159 руб.</p>
+            <p class="promoCard__price_new">5 017 руб.</p>
+          </div>
+          <div class="promoCard__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="promotion__slide promoCard">
+          <h3 class="promoCard__title">Ронда КРР1600.1 </h3>
+          <div class="promoCard__label">
+            <p class="promoCard__discount"> -30% </p>
+          </div>
+          <picture class="promoCard__pict">
+            <source srcset="./img/p01.webp" type="image/webp">
+            <img src="./img/p01.jpg" alt="" width="296" height="214">
+          </picture>
+          <div class="promoCard__price">
+            <p class="promoCard__price_old">7 159 руб.</p>
+            <p class="promoCard__price_new">5 017 руб.</p>
+          </div>
+          <div class="promoCard__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="promotion__slide promoCard">
+          <h3 class="promoCard__title">Ронда КРР1600.1 </h3>
+          <div class="promoCard__label">
+            <p class="promoCard__discount"> -30% </p>
+          </div>
+          <picture class="promoCard__pict">
+            <source srcset="./img/p01.webp" type="image/webp">
+            <img src="./img/p01.jpg" alt="" width="296" height="214">
+          </picture>
+          <div class="promoCard__price">
+            <p class="promoCard__price_old">7 159 руб.</p>
+            <p class="promoCard__price_new">5 017 руб.</p>
+          </div>
+          <div class="promoCard__info">
+            <button class="btn__buy">купить</button>
+            <svg class="" viewBox="0 0 22 19">
+              <title></title>
+              <use href="./icons/sprite.svg#favoirite"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="samples wrapper">
+      <div class="samples__header">
+        <h2 class="samples__title section__title">наши работы</h2>
+        <a class="samples__all" href="#">Смотреть все работы</a>
+      </div>
+      <ul class="samples__list">
+
+        <li class="samples__item itemSample">
+          <a href="#">
+            <h3 class="itemSample__title">кухня Глетчер</h3>
+            <picture class="itemSample__img">
+              <source srcset="./img/s01.webp" type="image/webp">
+              <img src="./img/s01.jpg" alt="кухня Глетчер" width="488" height="374">
+            </picture>
+          </a>
+        </li>
+        <li class="samples__item itemSample">
+          <a href="#">
+            <h3 class="itemSample__title">гостиная Денвер</h3>
+            <picture class="itemSample__img">
+              <source srcset="./img/s02.webp" type="image/webp">
+              <img src="./img/s02.jpg" alt="гостиная Денвер" width="488" height="374">
+            </picture>
+          </a>
+        </li>
+        <li class="samples__item itemSample itemSample_tall">
+          <a href="#">
+            <h3 class="itemSample__title">кухня Лондон</h3>
+            <picture class="itemSample__img">
+              <source srcset="./img/s01.webp" type="image/webp">
+              <img src="./img/s03.jpg" alt="кухня Лондон" width="488" height="833">
+            </picture>
+          </a>
+        </li>
+        <li class="samples__item itemSample itemSample_wide">
+          <a href="#">
+            <h3 class="itemSample__title">кухня Амели</h3>
+            <picture class="itemSample__img">
+              <source srcset="./img/s04.webp" type="image/webp">
+              <img src="./img/s04.jpg" alt="кухня Амели" width="1003" height="430">
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contacts wrapper">
+      <div class="contactList">
+        <h2 class="section__title">наши контакты</h2>
+        <address>Краснодар, Московская 144 корпус -1</address>
+        <a href="tel:+79615259191">+7 961-525-91-91</a>
+        <button>задать вопрос</button>
+      </div>
+      <div class="contactMap">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=39.003099%2C45.090938&mode=search&oid=245080241935&ol=biz&z=16"></iframe>
+      </div>
+
+
+    </section>
+
+    <section class="ourSocial wrapper">
+      <h2 class="section__title ourSocial__title">мы в instagram</h2>
+      <div class="imgWrapper">
+        <picture>
+          <source srcset="./img/instagram.webp" type="image/webp">
+          <img src="./img/instagram.jpg" alt="" width="1173" height="769">
+        </picture>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footerWrapper wrapper">
+      <div class="footerNav">
+        <a href="#">
+          <svg class="footerNav__logo" viewBox="0 0 189 39">
+            <title>Логотип АркоМебель</title>
+            <use href="./icons/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <a class="phone" href="tel:+79615259191">8-961-525-91-91</a>
+        <dl>
+          <dt>Время работы:</dt>
+          <dd>с 10:00 до 19:00</dd>
+          <dt>Адрес:</dt>
+          <dd>
+            <address>Краснодар,
+              ул. Московская 144 корп. - 1</address>
+          </dd>
+          <dt>Почта:</dt>
+          <dd>
+            <a href="mailto:mebelarko@mail.ru">mebelarko@mail.ru</a>
+          </dd>
+        </dl>
+
+        <div class="footerSocial">
+          <p>Мы в Инстаграме</p>
+          <a href="#">
+            <img src="./icons/instagram.svg" alt="" width="32" height="32">
+          </a>
+        </div>
+        <div class="copyright">
+          <small>&copy; Все права защищены</small>
+        </div>
+      </div>
+
+      <div class="footerMenu">
+        <dl>
+          <dt><a href="#">Кухни</a></dt>
+          <dd>
+            <a href="#">Модульные кухни</a>
+          </dd>
+          <dd>
+            <a href="#">Готовые комплекты</a>
+          </dd>
+          <dd>
+            <a href="#">Маленькие кухни</a>
+          </dd>
+          <dd>
+            <a href="#">Угловые кухни</a>
+          </dd>
+          <dd>
+            <a href="#">Кухонные уголки</a>
+          </dd>
+          <dd>
+            <a href="#">Столы кухонные</a>
+          </dd>
+          <dd>
+            <a href="#">Стулья для кухни</a>
+          </dd>
+          <dd>
+            <a href="#">Комплектующие</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#">Гостинные</a></dt>
+          <dd>
+            <a href="#">Модульные</a>
+          </dd>
+          <dd>
+            <a href="#">Журнальные столы</a>
+          </dd>
+          <dd>
+            <a href="#">Полки</a>
+          </dd>
+          <dd>
+            <a href="#">Тумбы под ТВ</a>
+          </dd>
+          <dd>
+            <a href="#">Шкафы</a>
+          </dd>
+          <dd>
+            <a href="#">Стеллажи</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#">Спальни</a></dt>
+          <dd>
+            <a href="#">Кровати</a>
+          </dd>
+          <dd>
+            <a href="#">Матрацы</a>
+          </dd>
+          <dd>
+            <a href="#">Шкафы</a>
+          </dd>
+          <dd>
+            <a href="#">Комоды</a>
+          </dd>
+          <dd>
+            <a href="#">Столы туалетные</a>
+          </dd>
+          <dd>
+            <a href="#">Тумбы прикроватные</a>
+          </dd>
+          <dd>
+            <a href="#">Зеркала</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#">Диваны</a></dt>
+          <dd>
+            <a href="#">Прямые</a>
+          </dd>
+          <dd>
+            <a href="#">Угловые</a>
+          </dd>
+          <dd>
+            <a href="#">На металлокаркасе</a>
+          </dd>
+          <dd>
+            <a href="#">Кресла</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt><a href="#">Детские</a></dt>
+          <dd>
+            <a href="#">Кровати</a>
+          </dd>
+          <dd>
+            <a href="#">Полки</a>
+          </dd>
+          <dd>
+            <a href="#">Столы</a>
+          </dd>
+          <dd>
+            <a href="#">Тумбы</a>
+          </dd>
+          <dd>
+            <a href="#">Шкафы</a>
+          </dd>
+          <dd>
+            <a href="#">Комоды</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>Прихожие</dt>
+          <dd>
+            <a href="#">Модульные</a>
+          </dd>
+          <dd>
+            <a href="#">Обувницы</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            <a href="#">Шкафы-купе</a>
+          </dt>
+          <dd></dd>
+        </dl>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+</body>
+
+</html>
